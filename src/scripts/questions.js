@@ -265,7 +265,7 @@ const questions = [
     },
     {
       question: "Qual país venceu a Copa do Mundo de futebol de 1974?",
-      options: ["Alemanha Ocidental", "Holanda", "Argentina", "Brasil"],
+      options: ["Alemanha Ocidental", "Alemanha Oriental", "Argentina", "Brasil"],
       answer: "Alemanha Ocidental",
       explanation: "A Alemanha Ocidental venceu a Copa do Mundo de futebol de 1974, realizada na Alemanha Ocidental e conquistou seu segundo título mundial."
     },
