@@ -488,7 +488,7 @@ const questions = [
     },
     {
       question: "Qual jogador nigeriano é conhecido como 'Big Boss'?",
-      options: ["Jay-Jay Okocha", "Nwankwo Kanu", "Rashidi Yekini", "Vincent Enyeama"],
+      options: ["Jay-Jay Okocha", "Stephen Keshi", "Rashidi Yekini", "Vincent Enyeama"],
       answer: "Stephen Keshi"
     },
     {
