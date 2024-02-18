@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quis de Futebol</title>
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="./src/assets/icons/channels4_profile-removebg-preview.png" type="image/x-icon">
+   
+    <!-- estilos dos aquivos -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- Musica de fundo -->
+
+    <!-- musica  -->
+    <audio id="victoryMusic" src="./src/assets/audio/pais do futebol.mp3"></audio>
+
+</head>
+<body>
+    <header class="inicio">
+        <div>
+            <img class="logo" src="./src/assets/icons/channels4_profile-removebg-preview.png" alt="logo do site">
+        </div>
+        <div>
+            <h1>Quis Sobre a copa do mundo!</h1>
+        </div>
+        <div id="menuToggle" style="margin-right: 30px;">
+            <nav id="mainNav">
+                <ul>
+                    <li><h4>Perfil</h4></li>
+                    <!-- <li><h4>Sobre</h4></li> -->
+                    <li><h4>Sair</h4></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz">
+        <div class="quiz-container">
+            <div class="question"></div>
+            <div class="options"></div>
+            <div class="result"></div>
+            <div class="time-container">
+                 <!-- <div>Tempo restante</div> -->
+                 <div class="time-circle" id="time-circle"></div>
+               
+            </div>
+            <div class="time-container">
+                <div class="timer"  id="time-circle"></div>
+                <div class="timer" id="total-time" style="display: none;">00:00</div>
+            </div>
+           
+        </div>
+    </main>
+
+
+    <script src="./src/scripts/questions.js" defer></script>
+    <script src="./src/scripts/questinario.js" defer></script>
+</body>
+</html>

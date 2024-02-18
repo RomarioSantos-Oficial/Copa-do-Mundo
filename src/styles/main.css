@@ -1,0 +1,163 @@
+/* Define a fonte padrão para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Para garantir que o cabeçalho fique acima de outros elementos */
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+/* Estilos para os elementos dentro do cabeçalho */
+header div {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para a navegação dentro do cabeçalho */
+header nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+/* Estilos para os itens da navegação */
+header nav li {
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+main{
+    margin-top: 50px;
+}
+
+/* Estilos para a logo */
+.logo {
+    margin-left: 35px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.quiz{
+
+    position: relative;
+    align-items: center;
+}
+  
+/* Estilos para o contêiner do quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o contêiner de tempo */
+.time-container {
+    text-align: center;
+}
+
+/* Estilos para o cronômetro circular */
+.time-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #add8e6;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 100px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#total-time{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+}
+
+/* Estilos para a pergunta */
+.question {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para as opções */
+.options {
+    margin-bottom: 20px;
+}
+
+/* Estilos para as opções individuais */
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+/* Estilos para a opção selecionada */
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para o resultado da resposta */
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a resposta correta */
+.correct {
+    color: green;
+}
+
+/* Estilos para a resposta errada */
+.wrong {
+    color: red;
+}
+
+/* Estilos para os botões de confirmação, próxima pergunta e finalizar */
+.confirm-button, .next-button, .finish-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilos para o botão "Próxima Pergunta" */
+.next-button {
+    margin-top: 10px; /* Adiciona margem acima do botão */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    transition: background-color 0.3s; /* Adiciona transição suave para a mudança de cor de fundo */
+}
+
+/* Estilos de hover para o botão "Próxima Pergunta" */
+.next-button:hover {
+    background-color: #07350a; /* Altera a cor de fundo ao passar o mouse */
+}
