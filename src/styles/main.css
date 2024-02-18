@@ -161,3 +161,30 @@ main{
 .next-button:hover {
     background-color: #07350a; /* Altera a cor de fundo ao passar o mouse */
 }
+
+
+.fim {
+    font-size: 10px;
+    position: fixed; /* Fixa a div na tela */
+    bottom: 0; /* Ajusta a posição para a parte inferior da tela */
+    left: 0; /* Ajusta a posição para a esquerda da tela */
+    width: 100%; /* Define a largura da div */
+    background-color: #888686; /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px 0; /* Adiciona espaço interno superior e inferior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil na parte superior */
+    z-index: 999; /* Garante que a div esteja acima de outros elementos */
+}
+
+.fim a {
+    color: inherit; /* Herda a cor do texto ao redor */
+    text-decoration: none; /* Remove a linha abaixo do link */
+    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.fim a:hover {
+    color: navy; /* Muda a cor do texto para azul marinho */
+    text-decoration: none; /* Remove a linha abaixo do link */
+    padding-bottom:2px; /* Aumenta o espaço abaixo do texto */
+    transition: padding-bottom 0.3s; /* Adiciona uma transição suave para o aumento do espaço */
+}
