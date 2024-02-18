@@ -212,7 +212,7 @@ function displayResult() {
     // totalTimeElement.style.backgroundColor = 'lightgreen'; // Define o fundo do cronômetro total como verde claro
 });
 
-    // Seleciona aleatoriamente as 50 perguntas
+    // Seleciona aleatoriamente as 30 perguntas
     const selectedQuestions = selectRandomQuestions();
     // Exibe a primeira pergunta quando o documento é carregado
     displayQuestion();
