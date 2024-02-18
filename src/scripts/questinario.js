@@ -270,7 +270,7 @@ const musicList = [
 function createAudioElement() {
     const audioElement = new Audio();
     // Define o volume para 20%
-    audioElement.volume = 0.5;
+    audioElement.volume = 0.2;
     return audioElement;
 }
 
