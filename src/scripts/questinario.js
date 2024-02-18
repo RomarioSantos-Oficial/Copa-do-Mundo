@@ -257,7 +257,7 @@ function displayQuestion() {
     }
 }
 
- // Lista de URLs das músicas
+// Lista de URLs das músicas
 const musicList = [
     './src/assets/audio/pais do futebol.mp3',
     './src/assets/audio/Shakia 2010 copa.mp3',
@@ -266,30 +266,42 @@ const musicList = [
     // Adicione mais URLs de músicas conforme necessário
 ];
 
-// Função para selecionar aleatoriamente uma música da lista
-function getRandomMusic() {
-    const randomIndex = Math.floor(Math.random() * musicList.length);
-    return musicList[randomIndex];
+// Função para criar um elemento de áudio
+function createAudioElement() {
+    const audioElement = new Audio();
+    // Define o volume para 20%
+    audioElement.volume = 0.5;
+    return audioElement;
 }
 
-// Função para reproduzir a música
-function playRandomMusic() {
-    // Cria um elemento de áudio
-    const audioElement = new Audio();
+// Função para reproduzir a próxima música na lista
+function playNextMusic() {
     // Obtém uma música aleatória da lista
-    const randomMusic = getRandomMusic();
+    const randomIndex = Math.floor(Math.random() * musicList.length);
+    const randomMusic = musicList[randomIndex];
+
+    // Cria um novo elemento de áudio
+    const audioElement = createAudioElement();
     // Define a música selecionada como a origem do elemento de áudio
     audioElement.src = randomMusic;
-    // Define o volume para 20%
-    audioElement.volume = 0.2;
+
+    // Adiciona um evento de 'ended' ao elemento de áudio para tocar a próxima música quando a atual terminar
+    audioElement.addEventListener('ended', playNextMusic);
+
     // Inicia a reprodução da música
     audioElement.play();
-    // Remove o evento de clique para evitar a reprodução repetida
-    document.removeEventListener('click', playRandomMusic);
 }
 
-// Adiciona um evento de clique ao documento para iniciar a reprodução da música
-document.addEventListener('click', playRandomMusic);
+// Função para iniciar a reprodução da playlist quando qualquer parte da página for clicada
+function startPlaylistOnClick() {
+    // Remove o evento de clique após o início da reprodução da playlist para evitar repetições
+    document.removeEventListener('click', startPlaylistOnClick);
+    // Inicia a reprodução da playlist
+    playNextMusic();
+}
+
+// Adiciona um evento de clique ao documento para iniciar a reprodução da playlist
+document.addEventListener('click', startPlaylistOnClick);
 
 });
 
