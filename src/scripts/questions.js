@@ -624,7 +624,5 @@ const questions = [
         answer: "Indonésia",
         explanation: "A Indonésia foi a primeira seleção da Ásia a participar de uma Copa do Mundo. Competiu na Copa de 1938 como Índias Orientais Neerlandesas, na época uma colônia dos Países Baixos. Convidada pela FIFA, a equipe não precisou passar por eliminatórias. É notável que esta seja a única seleção que disputou apenas um jogo em Copas do Mundo."
     }
-
 ]
-
 // Não é necessário exportar as perguntas, já que elas são acessíveis globalmente
