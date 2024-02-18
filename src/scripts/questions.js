@@ -346,8 +346,8 @@ const questions = [
     },
     {
       question: "Qual foi a melhor colocação da Coreia do Sul em uma Copa do Mundo de futebol?",
-      options: ["Quartas de final", "Oitavas de final", "Semifinal", "Final"],
-      answer: "Semifinal"
+      options: ["Quarto lugar", "Oitavas de final", "Quartas de finais", "Terceiro lugar"],
+      answer: "Quarto lugar"
     },
     {
       question: "Qual país asiático sediou a Copa do Mundo de futebol em 2002 juntamente com a Coreia do Sul?",
