@@ -464,8 +464,8 @@ const questions = [
     {
       question: "Qual foi o melhor desempenho da seleção da Tunísia em uma Copa do Mundo?",
       options: ["Oitavas de final", "Quartas de final", "Semifinais", "Fase de grupos"],
-      answer: "Oitavas de final",
-      explanation: "O melhor desempenho da seleção da Tunísia em uma Copa do Mundo foi em 1978, na Argentina, naqual ele fez 4 ponto, porem não passou de fase."
+      answer: "Fase de grupos",
+      explanation: "O melhor desempenho da seleção da Tunísia em uma Copa do Mundo foi em 1978, em fase de grupo, na Argentina, naqual ele fez 4 ponto, porem não passou de fase."
     },
     {
       question: "Qual jogador marfinense fez um gol no Brasil na fase de grupo da Copa do Mundo de 2010?",
