@@ -157,15 +157,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const currentQuestion = selectedQuestions[currentQuestionIndex];
+        const explanation = currentQuestion.explanation;
 
         if (selectedAnswer === currentQuestion.answer) {
             score += 10; // Adiciona 10 pontos para cada resposta correta (ajuste conforme necessário)
-            resultElement.textContent = 'Resposta correta!';
+            resultElement.textContent = `Resposta correta! ${explanation}`;
             resultElement.classList.add('correct');
         } else {
             // Não concede pontos ou subtrai pontos para respostas incorretas (ajuste conforme necessário)
             // Por exemplo: score -= 5; para subtrair 5 pontos por resposta incorreta
-            resultElement.textContent = `Resposta errada. A resposta correta é: ${currentQuestion.answer}`;
+            resultElement.textContent = `Resposta errada. A resposta correta é: ${currentQuestion.answer}. ${explanation}`;
             resultElement.classList.add('wrong');
         }
 
@@ -304,5 +305,3 @@ function startPlaylistOnClick() {
 document.addEventListener('click', startPlaylistOnClick);
 
 });
-
-
